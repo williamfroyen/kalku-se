@@ -62,6 +62,14 @@
   {"title":"Dagar till timmar","url":"/tid/dagar-till-timmar.html","category":"Tid"},
   {"title":"Timmar till dagar","url":"/tid/timmar-till-dagar.html","category":"Tid"},
   {"title":"Timmar till sekunder","url":"/tid/timmar-till-sekunder.html","category":"Tid"},
-  {"title":"Sekunder till timmar","url":"/tid/sekunder-till-timmar.html","category":"Tid"}
+  {"title":"Sekunder till timmar","url":"/tid/sekunder-till-timmar.html","category":"Tid"},
 
+  {"title":"Kilopascal till bar","url":"/tryck/kpa-till-bar.html","category":"Tryck"},
+  {"title":"Bar till kilopascal","url":"/tryck/bar-till-kpa.html","category":"Tryck"},
+  {"title":"Megapascal till bar","url":"/tryck/mpa-till-bar.html","category":"Tryck"},
+  {"title":"Bar till megapascal","url":"/tryck/bar-till-mpa.html","category":"Tryck"},
+  {"title":"Kilopascal till psi","url":"/tryck/kpa-till-psi.html","category":"Tryck"},
+  {"title":"psi till kilopascal","url":"/tryck/psi-till-kpa.html","category":"Tryck"},
+  {"title":"Bar till psi","url":"/tryck/bar-till-psi.html","category":"Tryck"},
+  {"title":"psi till bar","url":"/tryck/psi-till-bar.html","category":"Tryck"}
 ]

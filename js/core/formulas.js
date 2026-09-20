@@ -336,7 +336,7 @@ export const formulaTable = {
         neg: false
     },
     "kilometer-til-mil": {
-        formula: (x) => x * 10,
+        formula: (x) => x / 10,
         decimals: 3,
         noZero: false,
         neg: false
@@ -366,7 +366,7 @@ export const formulaTable = {
         neg: false
     },
     "mil-til-kilometer": {
-        formula: (x) => x / 10,
+        formula: (x) => x * 10,
         decimals: 3,
         noZero: false,
         neg: false

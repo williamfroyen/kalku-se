@@ -54,12 +54,12 @@ h3 {
 
 a {
     text-decoration: None;
-    color: #d1fff9;
+    color: #ddfffa;
     font-size: 18px;
 }
 
 a:hover {
-    color: #6affeb;
+    color: #f1f1f1;
 }
 
 .small-link {
@@ -138,7 +138,6 @@ a:hover {
     padding: 120px;
 }
 
-
 #search {
     height: 40px;
     margin: 50px;
@@ -189,7 +188,7 @@ a:hover {
     position: relative;
     z-index: 1000;
     text-align: left;
-    background-color: rgb(0, 75, 68);
+    background-image: linear-gradient(90deg, #075852 0%, #096963 50%, #096e68 100%);
     width: 355px;
     border-radius: 5px;
     margin: 20px auto;
@@ -218,11 +217,13 @@ a:hover {
 #main-content {
     width: 80vw;
     margin: 0px auto;
-    background-color: #242424;
+    background-color: #151f1e;
+    border-radius: 20px;
 }
 
 #main-content {
-    padding: 20px 30px 40px 30px;
+    padding: 40px 30px 40px 30px;
+    margin-top: 30px;
 }
 
 #selectcategory {
@@ -230,31 +231,44 @@ a:hover {
 }
 
 #selectcategory #categoryselectionfield {
-    padding: 10px 10px 30px 10px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+#selectcategory h2 {
+    background-image: linear-gradient(90deg, #09796F 0%, #0c7c9e56 50%, #0c7c9e00 100%);
+    width: 30vw;
+    margin: 10px;
+    border-radius: 10px;
+    text-indent: 5px;
 }
 
 #selectcategory #categoryselectionfield .categoryselection {
-    display: inline-block;
-    border: none;
-    padding: 10px 15px;
-    margin: 5px;
-    border-radius: 5px;
-    background-color: rgb(0, 75, 68);
-    color: #f1f1f1;
-    font-family: "Inter", sans-serif;
+    background-image: linear-gradient(90deg, #0c7c9e 0%, #0b9185 51%, #09796F 100%);
+    background-size: 200% auto;
     font-size: 18px;
+    text-align: center;
+    margin: 10px;
+    padding: 13px 20px;
+    box-shadow: 0 0 5px #000;
+    border-radius: 10px;
+    border: none;
+    color: #f1f1f1;
     cursor: pointer;
+    transition: 0.2s;
+}
+
+#selectcategory #categoryselectionfield .categoryselection:hover {
+    background-position: right center;
+    box-shadow: 0px 0px 1px 2px #fff;
+    color: #fff;
+    text-decoration: none;
 }
 
 #selectcategory #categoryselectionfield .categoryselected {
-    background-color: rgb(0, 128, 115);
-}
-
-#line {
-    background-color: #f1f1f1;
-    height: 1px;
-    width: auto;
-    margin: 0px 10px;
+    background-position: right center;
+    box-shadow: 0px 0px 1px 2px #fff;
+    color: #fff;
 }
 
 #selectcategory h2,
@@ -274,7 +288,7 @@ a:hover {
 }
 
 .category-field {
-    padding: 10px 10px 20px 10px;
+    padding: 0px 10px 30px 10px;
 }
 
 .category-field h2 {
@@ -304,7 +318,7 @@ a:hover {
 
 #question-box {
     padding: 15px;
-    background-color: rgb(0, 92, 84);
+    background-color: #004B44;
     border-radius: 15px;
     margin: 15px;
     width: 40vw;
@@ -322,7 +336,7 @@ a:hover {
 
 footer #top-footer {
     height: 50px;
-    background-color: rgb(0, 92, 84);
+    background-color: #005c54;
     font-size: 18px;
     margin-top: 50px;
     text-align: center;
@@ -342,7 +356,7 @@ footer #bottom-footer {
     position: relative;
     height: 60px;
     border-top: 5px;
-    background-color: rgb(0, 75, 68);
+    background-color: #004B44;
     font-size: 18px;
     text-align: center;
     padding: 20px;
@@ -356,7 +370,7 @@ footer #bottom-footer a {
 }
 
 footer #bottom-footer a:hover {
-    color: #00e6c7;
+    color: #ddfffa;
 }
 
 footer #bottom-footer #footerFirstElement {
@@ -386,14 +400,27 @@ footer #bottom-footer #footerLastElement {
         height: 60px;
         width: 150px;
     }
+
     #showcase h1 {
         font-size: 38px;
     }
+
     #menu {
         padding: 20px 5px;
     }
+
     #menu li a {
         font-size: 17px;
+    }
+
+     #selectcategory h2 {
+        margin: 5px;
+        width: 50vw;
+    }
+
+    #selectcategory #categoryselectionfield .categoryselection {
+        padding: 10px 15px;
+        margin: 10px 5px;
     }
 }
 
@@ -402,20 +429,25 @@ footer #bottom-footer #footerLastElement {
         font-size: 34px;
         padding: 125px 30px;
     }
+
     #categories {
         grid-template-columns: 1fr;
     }
+
     header {
         padding: 0px 10px;
     }
+
     footer #bottom-footer {
         text-align: center;
         height: 90px;
         padding: 10px;
     }
+
     footer #bottom-footer p {
         padding: 10px;
     }
+
     footer #bottom-footer #footerFirstElement {
         position: relative;
         top: 0;
@@ -433,11 +465,11 @@ footer #bottom-footer #footerLastElement {
 
 @media only screen and (max-width: 550px) {
     #main-content {
-        padding: 20px 10px 40px 10px;
+        width: 90vw;
     }
 
     #selectcategory {
-        padding: 30px 10px 0px 10px;
+        width: 90vw;
     }
 
     #selectcategory #categoryselectionfield {
@@ -447,15 +479,23 @@ footer #bottom-footer #footerLastElement {
     header {
         padding: 0px;
     }
+
     #menu li {
         margin-right: 15px;
     }
+
     #question-box #question a {
         font-size: 16px;
     }
+
     #question-box {
         padding: 10px;
         margin: 10px;
+    }
+
+    #selectcategory h2 {
+        width: 60vw;
+        font-size: 22px;
     }
 }
 
@@ -464,12 +504,17 @@ footer #bottom-footer #footerLastElement {
         font-size: 28px;
         padding: 120px 20px;
     }
+
     #menu li {
         margin-right: 10px;
     }
 
-    #selectcategory #categoryselectionfield .categoryselection {
-        padding: 5px 10px;
+    #main-content {
+        padding: 30px 20px;
+    }
+
+    #selectcategory {
+        padding: 30px 20px 0px 20px;
     }
 
     #search #searchinputfield #searchinput {
@@ -494,5 +539,9 @@ footer #bottom-footer #footerLastElement {
     #search #searchresultfield {
         width: 255px;
         margin: 20px auto;
+    }
+
+    #selectcategory h2 {
+        width: 70vw;
     }
 }
