@@ -58,10 +58,6 @@ a {
     font-size: 18px;
 }
 
-a:hover {
-    color: #f1f1f1;
-}
-
 .small-link {
     font-size: 16px;
 }
@@ -119,10 +115,6 @@ a:hover {
     font-size: 18px;
 }
 
-#menu li a:hover {
-    color: #75ffed;
-}
-
 #showcase {
     height: 300px;
     background: rgb(2,0,36);
@@ -162,15 +154,7 @@ a:hover {
     border-radius: 2px;
 }
 
-#language-select .country:hover {
-    background-image: linear-gradient(90deg, #0c9e72 0%, #0b9164 51%, #09793b 100%);
-    box-shadow: 0px 0px 0px 1px #f1f1f1 inset;
-    cursor: pointer;
-    transition: 0.2s;
-}
-
 #language-select .selected-country {
-    background-image: linear-gradient(90deg, #0c9e72 0%, #0b9164 51%, #09793b 100%);
     box-shadow: 0px 0px 0px 1px #f1f1f1 inset;
 }
 
@@ -250,10 +234,6 @@ a:hover {
     text-decoration: none;
 }
 
-#search #searchresultfield #searchresultlist a:hover {
-    color: #75ffed;
-}
-
 #selectcategory,
 #main-content {
     width: 80vw;
@@ -285,8 +265,7 @@ a:hover {
 }
 
 #selectcategory #categoryselectionfield .categoryselection {
-    background-image: linear-gradient(90deg, #0c7c9e 0%, #0b9185 51%, #09796F 100%);
-    background-size: 200% auto;
+    background-image: linear-gradient(90deg,#0c7c9e 0%,#0b9185 100%);
     font-size: 18px;
     text-align: center;
     margin: 10px;
@@ -296,19 +275,12 @@ a:hover {
     border: none;
     color: #f1f1f1;
     cursor: pointer;
-    transition: 0.2s;
-}
-
-#selectcategory #categoryselectionfield .categoryselection:hover {
-    background-position: right center;
-    box-shadow: 0px 0px 1px 2px #fff;
-    color: #fff;
-    text-decoration: none;
+    transition: box-shadow 0.2s, color 0.2s;
 }
 
 #selectcategory #categoryselectionfield .categoryselected {
-    background-position: right center;
-    box-shadow: 0px 0px 1px 2px #fff;
+    background-image: linear-gradient(90deg,#0b9185 0%,#09796F 100%);
+    box-shadow: 0 0 1px 2px #fff;
     color: #fff;
 }
 
@@ -371,10 +343,6 @@ a:hover {
     font-size: 18px;
 }
 
-#question-box #question a:hover {
-    color: #75ffed;
-}
-
 footer #top-footer {
     height: 50px;
     background-color: #005c54;
@@ -387,10 +355,6 @@ footer #top-footer {
 footer #top-footer a {
     color: #d1fff9;
     text-decoration: none;
-}
-
-footer #top-footer a:hover {
-    color: #8affef;
 }
 
 footer #bottom-footer {
@@ -410,10 +374,6 @@ footer #bottom-footer a {
     color: #f1f1f1;
 }
 
-footer #bottom-footer a:hover {
-    color: #ddfffa;
-}
-
 footer #bottom-footer #footerFirstElement {
     left: 10%;
     top: 33%;
@@ -422,6 +382,45 @@ footer #bottom-footer #footerFirstElement {
 footer #bottom-footer #footerLastElement {
     right: 10%;
     top: 33%;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    a:hover {
+        color: #f1f1f1;
+    }
+
+    #menu li a:hover {
+        color: #75ffed;
+    }
+
+    #language-select .country:hover {
+        box-shadow: 0px 0px 0px 1px #f1f1f1 inset;
+        transition: box-shadow 0.1s, color 0.1s;
+        cursor: pointer;
+    }
+
+    #search #searchresultfield #searchresultlist a:hover {
+        color: #75ffed;
+    }
+
+    #selectcategory #categoryselectionfield .categoryselection:hover {
+        background-image: linear-gradient(90deg,#0b9185 0%,#09796F 100%);
+        box-shadow: 0 0 1px 2px #fff;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    footer #top-footer a:hover {
+        color: #8affef;
+    }
+
+    footer #bottom-footer a:hover {
+        color: #ddfffa;
+    }
+    
+    #question-box #question a:hover {
+        color: #75ffed;
+    }
 }
 
 @media only screen and (max-width: 1000px) {
