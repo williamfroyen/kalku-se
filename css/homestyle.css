@@ -145,6 +145,40 @@ a:hover {
     padding: 30px 200px;
 }
 
+#language-select {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    right: 0;
+    border-radius: 2px;
+}
+
+#language-select .country {
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(90deg, #0c7c9e 0%, #0b9185 51%, #09796F 100%);
+    margin: 5px 2px;
+    padding: 4px;
+    border-radius: 2px;
+}
+
+#language-select .country:hover {
+    background-image: linear-gradient(90deg, #0c9e72 0%, #0b9164 51%, #09793b 100%);
+    box-shadow: 0px 0px 0px 1px #f1f1f1 inset;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#language-select .selected-country {
+    background-image: linear-gradient(90deg, #0c9e72 0%, #0b9164 51%, #09793b 100%);
+    box-shadow: 0px 0px 0px 1px #f1f1f1 inset;
+}
+
+#language-select .country p {
+    font-size: 16px;
+    padding-right: 5px;
+}
+
 #search {
     height: 40px;
     margin: 50px;
@@ -456,6 +490,10 @@ footer #bottom-footer #footerLastElement {
         padding: 0px 10px;
     }
 
+    #search {
+        margin: 70px 50px 50px 50px;
+    }
+
     footer #bottom-footer {
         text-align: center;
         height: 90px;
@@ -550,9 +588,6 @@ footer #bottom-footer #footerLastElement {
 
 
 @media only screen and (max-width: 420px) {
-    #search {
-        margin: 50px 0px;
-    }
 
     #search #searchinputfield #searchinput {
         width: 200px;
